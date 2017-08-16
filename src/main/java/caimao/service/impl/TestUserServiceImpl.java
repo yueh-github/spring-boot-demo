@@ -1,7 +1,6 @@
 package caimao.service.impl;
 
 import caimao.domain.TestUser;
-import caimao.domain.UserEntity;
 import caimao.mapper.TestUserMapper;
 import caimao.service.TestUserService;
 import org.springframework.beans.factory.annotation.Autowired;
