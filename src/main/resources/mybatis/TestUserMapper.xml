@@ -68,4 +68,10 @@
       age = #{age,jdbcType=TINYINT}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="queryUserList" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from test_user
+  </select>
 </mapper>

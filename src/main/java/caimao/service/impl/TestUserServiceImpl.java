@@ -6,6 +6,8 @@ import caimao.service.TestUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Created by yuehao on 2017/8/16.
  */
@@ -25,5 +27,9 @@ public class TestUserServiceImpl implements TestUserService {
         testUser.setName(name);
         testUser.setAge(age);
         this.testUserMapper.insert(testUser);
+    }
+
+    public List<TestUser> queryUserList() throws Exception {
+        return this.testUserMapper.queryUserList();
     }
 }
